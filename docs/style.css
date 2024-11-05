@@ -1,0 +1,14 @@
+
+/*CSS source code*/
+.container {
+  display: grid; /* Enables grid layout on the container */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates a responsive grid with flexible columns */
+  gap: 20px; /* Sets the space between grid items */
+  padding: 10px; /* Adds padding around the container */
+}
+
+.item {
+  background-color: #e0e0e0; /* Sets a light gray background color for each item */
+  padding: 20px; /* Adds padding inside each item */
+  text-align: center; /* Centers the text within each item */
+}

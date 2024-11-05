@@ -1,0 +1,47 @@
+<!-- This information was learned from w3schools (n.d.) -->
+<!DOCTYPE html>
+<!-- Setting primary language of the document to English -->
+<html lang="en">
+<head>
+  <!-- Defining the character encoding set for displaying characters -->
+  <meta charset="UTF-8">
+  <!-- Allowing our pages to adapt seamlessly to different screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Control - using POST Method</title>
+</head>
+<body>
+  <h2>Form Controls Using POST Method</h2>
+  <!-- Form using the POST method, where form data will be sent in the HTTP request body.
+  The "POST method" is defined as one of the forms attributes (w3schools, n.d.) -->
+  <form action="submit" method="post">
+
+    <!-- Text Input Control for Username Input -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="YourUsername123">
+    <br><br>
+
+    <!-- Password Input Control for user's password Input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+    <br><br>
+
+    <!-- Date Input Control for Date of Birth Input -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+    <br><br>
+
+    <!-- Checkbox Control for Newsletter Subscription Input -->
+    <p>Subscribe to our newsletter?</p>
+    <input type="checkbox" id="newsletter" name="subscription" value="yes">
+    <label for="newsletter">Yes, sign me up!</label>
+    <br><br>
+
+    <!-- Textarea Control for User Comments -->
+    <label for="comments">Your Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="48" placeholder="Enter your comments here..."></textarea>
+    <br><br>
+    <!-- This button will submit form data to a server for processing-->
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

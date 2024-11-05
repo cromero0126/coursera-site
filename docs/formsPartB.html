@@ -1,0 +1,71 @@
+<!-- This information was learned from w3schools (n.d.) -->
+<!DOCTYPE html>
+<!-- Setting primary language of the document to English -->
+<html lang="en">
+<head>
+  <!-- Defining the character encoding set for displaying characters -->
+  <meta charset="UTF-8">
+  <!-- Allowing our pages to adapt seamlessly to different screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Control Examples Part B</title>
+</head>
+<body>
+  <h2>Form Control Examples Part B</h2>
+  
+  <!-- Form using the POST method, where form data will be sent in the HTTP request body.
+  I will use the POST method because information to shared is sensitive (w3schools, n.d.) -->
+  <form action="/submit" method="post">
+
+    <!-- 1. Choose your marital status from the available options -->
+    <p>1. Choose Marital Status:</p>
+    <!-- Radio button controls allow the user to select one marital status option -->
+    <input type="radio" id="single" name="marital_status" value="single">
+    <label for="single">Single</label><br>
+  
+    <input type="radio" id="married" name="marital_status" value="married">
+    <label for="married">Married</label><br>
+    
+    <input type="radio" id="widow" name="marital_status" value="widow">
+    <label for="widow">Widow</label><br>
+    
+    <input type="radio" id="prefer_not" name="marital_status" value="prefer_not">
+    <label for="prefer_not">Prefer not to say</label>
+    <br><br>
+
+    <!-- 2. Indicate whether you have any medical history of diabetes -->
+    <p>2. Do you have a medical history of diabetes?</p>
+    <!-- Radio button controls for yes/no answer regarding diabetes -->
+    <input type="radio" id="diabetes_yes" name="diabetes_history" value="yes">
+    <label for="diabetes_yes">Yes</label><br>
+    
+    <input type="radio" id="diabetes_no" name="diabetes_history" value="no">
+    <label for="diabetes_no">No</label>
+    <br><br>
+
+    <!-- 3. Write feedback for a food delivery service -->
+    <label for="feedback">3. Food Delivery Feedback:</label><br>
+    <!-- Textarea control for user feedback input -->
+    <textarea id="feedback" name="feedback" rows="8" cols="40" placeholder="Enter your feedback here..."></textarea>
+    <br><br>
+
+    <!-- 4. Select your favorite sport from a list of eight sports -->
+    <label for="favorite_sport">4. Select Favorite Sport:</label>
+    <!-- Dropdown select control for choosing a favorite sport -->
+    <select id="favorite_sport" name="favorite_sport">
+        <option value="soccer">Soccer</option>
+        <option value="basketball">Basketball</option>
+        <option value="tennis">Tennis</option>
+        <option value="baseball">Baseball</option>
+        <option value="swimming">Swimming</option>
+        <option value="cricket">Cricket</option>
+        <option value="rugby">Rugby</option>
+        <option value="hockey">Chess</option>
+    </select>
+    <br><br>
+
+    <!-- This button will submit form data to a server for processing -->
+    <input type="submit" value="Submit">
+    
+  </form>
+</body>
+</html>

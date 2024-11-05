@@ -1,0 +1,1 @@
+<p>AJAX allows web pages to send and receive data from a server asynchronously, improving user experience by updating only parts of the page without a full reload.</P>

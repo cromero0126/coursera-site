@@ -1,0 +1,59 @@
+<!-- This information was learned from w3schools (n.d.) -->
+<!DOCTYPE html>
+<!-- Setting primary language of the document to English -->
+<html lang="en">
+<head>
+  <!-- Defining the character encoding set for displaying characters -->
+  <meta charset="UTF-8">
+  <!-- Allowing our pages to adapt seamlessly to different screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Control - using GET Method</title>
+</head>
+<body>
+  <h2>Form Controls Using GET Method</h2>
+  <!-- Form using the GET method, where form data will be appended to the URL.
+The "GET method" is defined as one of the forms attributes (w3schools, n.d.)-->
+  <form action="submit" method="get">
+
+    <!-- Text Input Control for Full Name Input -->
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="Charly Karles">
+    <br><br>
+    <!-- Email Input Control for user's email Input -->
+    <label for="email1">Enter email:</label>
+    <input type="email" id="email1" name="email1" placeholder="email@domain.com">
+    <br><br>
+
+    <!-- Radio Button Control for User Experience Rating Input -->
+    <p>How would you rate your experience?</p>
+    <input type="radio" id="excellent" name="rating" value="excellent">
+    <label for="excellent">Excellent</label><br>
+    <input type="radio" id="good" name="rating" value="good">
+    <label for="good">Good</label><br>
+    <input type="radio" id="poor" name="rating" value="poor">
+    <label for="poor">Poor</label><br><br>
+
+    <!-- Checkbox Control for Contact Preferences Input -->
+    <p>How would you prefer to be contacted?</p>
+    <input type="checkbox" id="email" name="contactMethod" value="email">
+    <label for="email">Email</label><br>
+    <input type="checkbox" id="phone" name="contactMethod" value="phone">
+    <label for="phone">Phone</label><br>
+    <input type="checkbox" id="sms" name="contactMethod" value="sms">
+    <label for="sms">SMS (Text)</label><br><br>
+
+    <!-- Select Form Control: Dropdown Menu for Product Category -->
+    <label for="category">Which category product did you buy?</label>
+    <select id="category" name="category">
+      <option value="electronics">Electronics</option>
+      <option value="furniture">Furniture</option>
+      <option value="clothes">Clothes</option>
+      <!-- Using attribute "selected" for pre-selecting Food Option -->
+      <option value="food" selected>Food</option>
+    </select>
+    <br><br>
+    <!-- This button will submit form data to a server for processing-->
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hello Coursera!</title>
+
+	<link rel="stylesheet" type ="text/css" href="style.css">
+	<link rel="shortcut icon" href="tek.ico">
+
+	<style>
+	 h1{
+	 	color: black;
+	 	background: yellow;
+	 }
+	 h2{
+	 	color: green;
+	 }
+	</style>
+	
+</head>
+<body>
+	<noscript>JavaScript is not enable!</noscript>
+	<h1 onclick="this.innerText='Mouse Clicked!'; this.style.color='red'">Active Heading</h1>
+	<!--Las palabras de los cantores e interpretes-->
+	<h2>Puta mira como me tenes le dijo</h2>
+
+	<script type="text/javascript">
+		document.getElementsByTagName('h1')[0].onmouseover=function(){this.innerText='Mouse Is Over'; this.style.color='blue'}
+		document.getElementsByTagName('h2')[0].onmouseover=function(){this.innerText='Mouse Is Over'; this.style.color='blue'}
+	</script>
+
+	<script src="script.js"></script>
+
+</body>
+</html>

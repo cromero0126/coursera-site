@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Box Model</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: lightgray;
+      /*box-sizing: border-box;  this property is not inherited by child elements */
+    }
+
+    #box {
+      background-color: blue;
+      padding: 10px;
+      border: 5px solid black;
+      width: 300px;
+      height: 50px;
+      margin-top: 40px;
+      overflow: auto;
+      
+    }
+    #content {
+      background-color: #ffEE00; /*green "I changed it"*/
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Box Model</h1>
+
+  <!--<div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>-->
+
+  <div id="box">
+    <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit hfdhg jdhshfdsj jhsdjfdf jshfkjdklfs jsdfskjfils jsfksdflskf jsjdfksdfljs. </div>
+  </div>
+
+  <div style="background-color: greenyellow ;">Lorem ipsum dolor sit amet, consectetur adipisicing elit hadhjdhjhd jsdasjdlsj jhdsnjdsdj hdjkhsjhdsk hdjkjsa. </div>
+
+
+</body>
+</html>
+
+
+
+
